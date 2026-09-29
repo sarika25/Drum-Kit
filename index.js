@@ -54,6 +54,7 @@ function makeSound(key){
             break;
 
         case "l":
+            alert("L works");
             var kick = new Audio("./sounds/kick-bass.mp3");
             kick.play();
             break;
