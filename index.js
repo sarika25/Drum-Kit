@@ -1,3 +1,4 @@
+alert("JavaScript file loaded!");
 var n = document.querySelectorAll(".drum").length;
 // var curButton = document.querySelectorAll(".drum")[0];
 // curButton.addEventListener("click", function(){
