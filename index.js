@@ -56,10 +56,18 @@ function makeSound(key){
             break;
 
         case "l":
-            alert("L works");
-            var kick = new Audio("./sounds/kick-bass.mp3");
-            kick.play();
-            break;
+    var kick = new Audio("./sounds/kick-bass.mp3");
+
+    kick.addEventListener("error", function () {
+        console.log("Audio failed to load");
+    });
+
+    kick.addEventListener("canplaythrough", function () {
+        console.log("Audio loaded successfully");
+    });
+
+    kick.play();
+    break;
     
         default:
             break;
