@@ -1,4 +1,3 @@
-alert("JavaScript file loaded!");
 var n = document.querySelectorAll(".drum").length;
 // var curButton = document.querySelectorAll(".drum")[0];
 // curButton.addEventListener("click", function(){
@@ -50,25 +49,15 @@ function makeSound(key){
             break;
 
         case "k":
-            alert("K works");
             var crash = new Audio("./sounds/crash.mp3");
             crash.play();
             break;
 
         case "l":
-    var kick = new Audio("./sounds/kick-bass.mp3");
-
-    kick.addEventListener("error", function () {
-        console.log("Audio failed to load");
-    });
-
-    kick.addEventListener("canplaythrough", function () {
-        console.log("Audio loaded successfully");
-    });
-
-    kick.play();
-    break;
-    
+            var kick = new Audio("./sounds/kick-bass.mp3");
+            kick.play();
+            break;
+            
         default:
             break;
     }
